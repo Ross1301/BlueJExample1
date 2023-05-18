@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PrimalShape
+comment0.text=\r\n\ This\ is\ an\ abstract\ class,\ I\ am\ using\ \ Inheritance\ and\ Polymorphism.\r\n\ \r\n\ @author\ (Ruben\ Caballero)\ \r\n\ @version\ (v1)\r\n
+comment1.params=
+comment1.target=PrimalShape()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ PrimalShape\r\n
+comment2.params=
+comment2.target=double\ getArea()
+comment2.text=\r\n\ Getter\ for\ attribute\ area\ -\ returns\ the\ value\ of\ the\ attribute\ area\r\n\ \r\n\ @return\ the\ attribute\ area\r\n
+comment3.params=
+comment3.target=double\ getPerimeter()
+comment3.text=\r\n\ Getter\ for\ attribute\ perimeter\ -\ returns\ the\ value\ of\ the\ attribute\ perimeter\r\n\ \r\n\ @return\ the\ attribute\ perimeter\r\n
+comment4.params=
+comment4.target=void\ calculateArea()
+comment4.text=\r\n\ Abstract\ method\ calculateArea\ -\ since\ each\ Shape\ has\ a\ different\ method\ to\ calculate\ its\ area,\ \r\n\ this\ method\ will\ be\ define\ in\ each\ child\ class\r\n
+comment5.params=
+comment5.target=void\ calculatePerimeter()
+comment5.text=\r\n\ Abstract\ method\ calculateArea\ -\ since\ each\ Shape\ has\ a\ different\ method\ to\ calculate\ its\ area,\ \r\n\ this\ method\ will\ be\ define\ in\ each\ child\ class\r\n
+numComments=6

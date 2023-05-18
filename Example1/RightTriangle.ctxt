@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=RightTriangle
+comment0.text=\r\n\ class\ RightTriangle\ will\ be\ a\ child\ class\ from\ PrimalShape.\r\n\ \r\n\ @author\ (Ruben)\ \r\n\ @version\ (v1)\r\n
+comment1.params=base\ height
+comment1.target=RightTriangle(double,\ double)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ RightTriangle\r\n
+comment2.params=
+comment2.target=void\ calculateArea()
+comment3.params=
+comment3.target=void\ calculatePerimeter()
+comment4.params=
+comment4.target=double\ getBase()
+comment5.params=
+comment5.target=double\ getHeight()
+comment6.params=
+comment6.target=double\ getHypotenuse()
+numComments=7
