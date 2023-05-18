@@ -2,6 +2,7 @@ import java.util.*;
 public class Controller
 {
     public View1 view = new View1();
+    //public View2 view = new View2();
     List<PrimalShape> list=new ArrayList<PrimalShape>();
     
     public void listAll()
@@ -11,28 +12,28 @@ public class Controller
             if(shape instanceof RightTriangle)
             {
                 RightTriangle tri = (RightTriangle) shape;
-                view.printMessage("RightTriangle: ");
-                view.printMessage("Base Value: " + String.format("%.2f", tri.getBase()));
-                view.printMessage("Height Value: " + String.format("%.2f", tri.getHeight()));
-                view.printMessage("Hypotenuse Value: " + String.format("%.2f", tri.getHypotenuse()));
-                view.printMessage("Perimeter Value: " + String.format("%.2f", tri.getPerimeter()));
-                view.printMessage("Area Value: " + String.format("%.2f", tri.getArea()));
+                view.printMessage("RightTriangle: " + "\n"+
+                                "Base Value: " + String.format("%.2f", tri.getBase()) + "\n"+
+                                "Height Value: " + String.format("%.2f", tri.getHeight()) + "\n"+
+                                "Hypotenuse Value: " + String.format("%.2f", tri.getHypotenuse()) + "\n"+
+                                "Perimeter Value: " + String.format("%.2f", tri.getPerimeter()) + "\n"+
+                                "Area Value: " + String.format("%.2f", tri.getArea()));
             }
             else if (shape instanceof Square)
             {
                 Square square = (Square) shape;
-                view.printMessage("Square: ");
-                view.printMessage("Side Value: " + String.format("%.2f", square.getSide()));
-                view.printMessage("Perimeter Value: " + String.format("%.2f", square.getPerimeter()));
-                view.printMessage("Area Value: " + String.format("%.2f", square.getArea()));
+                view.printMessage("Square: " + "\n"+
+                                "Side Value: " + String.format("%.2f", square.getSide()) + "\n"+
+                                "Perimeter Value: " + String.format("%.2f", square.getPerimeter()) + "\n"+
+                                "Area Value: " + String.format("%.2f", square.getArea()));
             }
             else if (shape instanceof Circle)
             {
                 Circle circle = (Circle) shape;
-                view.printMessage("Circle: ");
-                view.printMessage("Radius Value: " + String.format("%.2f", circle.getRadius()));
-                view.printMessage("Circumference Value: " + String.format("%.2f", circle.getPerimeter()));
-                view.printMessage("Area Value: " + String.format("%.2f", circle.getArea()));
+                view.printMessage("Circle: " + "\n"+
+                                "Radius Value: " + String.format("%.2f", circle.getRadius()) + "\n"+
+                                "Circumference Value: " + String.format("%.2f", circle.getPerimeter()) + "\n"+
+                                "Area Value: " + String.format("%.2f", circle.getArea()));
             }
 
         }
@@ -49,9 +50,9 @@ public class Controller
     
         tri1.calculatePerimeter();
         tri1.calculateArea();
-        view.printMessage("Hypotenuse Value: " + String.format("%.2f", tri1.getHypotenuse()));
-        view.printMessage("Perimeter Value: " + String.format("%.2f", tri1.getPerimeter()));
-        view.printMessage("Area Value: " + String.format("%.2f", tri1.getArea()));
+        view.printMessage("Hypotenuse Value: " + String.format("%.2f", tri1.getHypotenuse()) + "\n"+
+                    "Perimeter Value: " + String.format("%.2f", tri1.getPerimeter()) + "\n"+
+                    "Area Value: " + String.format("%.2f", tri1.getArea()));
         
         this.list.add(tri1);
         
@@ -67,8 +68,8 @@ public class Controller
     
         squ.calculatePerimeter();
         squ.calculateArea();
-        view.printMessage("Perimeter Value: " + String.format("%.2f", squ.getPerimeter()));
-        view.printMessage("Area Value: " + String.format("%.2f", squ.getArea()));
+        view.printMessage("Perimeter Value: " + String.format("%.2f", squ.getPerimeter()) + "\n"+
+                        "Area Value: " + String.format("%.2f", squ.getArea()));
         
         this.list.add(squ);
         
@@ -84,8 +85,8 @@ public class Controller
     
         circle.calculatePerimeter();
         circle.calculateArea();
-        view.printMessage("Circumference Value: " + String.format("%.2f", circle.getPerimeter()));
-        view.printMessage("Area Value: " + String.format("%.2f", circle.getArea()));
+        view.printMessage("Circumference Value: " + String.format("%.2f", circle.getPerimeter()) + "\n"+
+                    "Area Value: " + String.format("%.2f", circle.getArea()));
         
         this.list.add(circle);
         
@@ -96,14 +97,14 @@ public class Controller
         boolean exit = false;
         while (!exit)
         {
-            view.printMessage("You are currently in the Main Menu");
-            view.printMessage("Please select an Option: ");
-            view.printMessage("[1] List all Shapes");
-            view.printMessage("[2] Create Right Triangle");
-            view.printMessage("[3] Create Square");
-            view.printMessage("[4] Create Circle");
-            view.printMessage("[0] Exit");
-            int option = view.readInt("Your Option: ");
+            int option = view.readInt("You are currently in the Main Menu \n " +
+                                    "Please select an Option: \n " +
+                                    "[1] List all Shapes \n " +
+                                    "[2] Create Right Triangle \n " +
+                                    "[3] Create Square \n " +
+                                    "[4] Create Circle \n " +
+                                    "[0] Exit \n " +
+                                    "Your Option: ");
             
             switch(option) 
             {

@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 /**
- * Write a description of class View1 here.
+ * 
  * 
  * @author (Ruben) 
  * @version (v1)
@@ -18,7 +17,7 @@ public class View1
             try
             {
                 System.out.print(m);
-                num = in.nextInt();
+                num = in.nextDouble();
                 error = false;
             }
             catch(java.util.InputMismatchException ex)

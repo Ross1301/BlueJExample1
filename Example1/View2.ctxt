@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=View1
+comment0.target=View2
 comment0.text=\r\n\ \r\n\ \r\n\ @author\ (Ruben)\ \r\n\ @version\ (v1)\r\n
 comment1.params=m
 comment1.target=double\ readDouble(java.lang.String)
